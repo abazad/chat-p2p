@@ -18,7 +18,7 @@
 	
 
 
-- **Connnect** conectarse con el servidor.
+- **Connect** conectarse con el servidor.
 
 	```
 	connect "nombreUsuario" "contraseña"
