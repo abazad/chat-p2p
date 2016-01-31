@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Press+Start+2P'rel='stylesheet' type='text/css'>
+        <link href='styles.css'rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <header class="row header-cus">
+                <img src="img/marciano.png" alt="marcianico">
+                <h1 class="header-title">CHAT ROUTER</h1>
+                <div class="dropdown dd-cus">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        OPTIONS
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+            </header>
+            <div class="row">
+                <div class="sidebar col-md-3" style="background-color:black">
+                    <div class="toolbar">
+                        <div class="buscador">
+                            <input type="search" placeholder='Añadir usuario...' class="form-control">
+                        </div>
+                        <div class="addgamer">
+                            <span class="iconadd glyphicon glyphicon-plus-sign"></span>
+                        </div>
+                    </div>
+                    <div class="user-list">
+                    </div>
+                </div>
+                <div class="col-md-9">
+                  <div class="messages row">
+                  </div>
+                  <div class="input-box row">
+                    <div class="col-xs-10">
+                      <textarea name="input-text" class='input-text' placeholder='Escribe aqui'></textarea>
+                    </div>
+                    <div class="col-xs-2 send-button">
+                      <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-paper-plane fa-stack-1x inside"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+		<div id="myModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">Identifíquese</h4>
+					</div>
+					<div class="modal-body">
+						<input type="text" placeholder='Usuario:' id='user-login' style="width: 100%;"></input>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" onclick="login()">Login</button>
+					</div>
+				</div>
+			</div>
+		</div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.12.0-beta.1/jquery-ui.min.js"></script>
+        <script src="https://webrtcexperiment-webrtc.netdna-ssl.com/DataChannel.js"></script>
+        <script src="js/md5.min.js"></script>
+        <script src="chatLogic.js"></script>
+    </body>
+</html>
